@@ -1,4 +1,3 @@
-// Wait until the page is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("btn");
   const resultDiv = document.getElementById("result");
