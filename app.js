@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("btn");
+  const form = document.getElementById("searchForm");
   const resultDiv = document.getElementById("result");
 
-  button.addEventListener("click", async () => {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
     const query = document.getElementById("search").value.trim();
-    console.log("Search button clicked");
+    console.log("Search form submitted");
     let url = "superheroes.php";
 
     if (query !== "") {
