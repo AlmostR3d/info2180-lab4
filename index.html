@@ -3,20 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INFO2180 Lab 4</title>
+    <title>Superhero Lookup</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Marvel Heroes Character Search</h1>
-
-    <input
-      type="text"
-      id="search"
-      placeholder="Enter superhero name or alias"
-    />
-    <button id="btn">Search</button>
-
-    <div id="result"></div>
+    <div class="container">
+      <h1>Superhero Lookup</h1>
+      <form id="searchForm">
+        <input
+          type="text"
+          id="search"
+          name="query"
+          placeholder="Enter superhero name or alias"
+        />
+        <button type="submit" id="searchBtn">Search</button>
+      </form>
+      <div id="result"></div>
+    </div>
 
     <script src="app.js"></script>
   </body>
